@@ -57,6 +57,19 @@ zipp                    3.17.0
 4. #### install all packages
 5. ```flask run```
 
+## Usage
+1. #### launch flask app
+2. #### create an account
+3. #### upload pictures of yourself (the more the better)
+4. #### go to main page and upload pictures where you want to be found in
+
+
+### Database
+#### For user and picture storage, 000webhost was used
+
+## Disclaimer
+#### The used AI model is not the best and might only recognize people who are directly facing the camera with their whole face fully visible
+
 
 
  
