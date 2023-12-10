@@ -53,7 +53,7 @@ zipp                    3.17.0
 #### To install and run the application, follow these steps:
 1. ```virtualenv name```
 2. ```name\Scripts\activate```
-3. #### copy the code into virtual enviroment
+3. #### copy the code into virtual enviroment (without php code)
 4. #### install all packages
 5. ```flask run```
 
