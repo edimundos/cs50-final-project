@@ -64,7 +64,7 @@ zipp                    3.17.0
 4. #### go to main page and upload pictures where you want to be found in
 
 
-### Database
+## Database
 #### For user and picture storage, 000webhost was used
 
 ## Disclaimer
