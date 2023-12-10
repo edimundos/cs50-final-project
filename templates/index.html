@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="post" enctype="multipart/form-data" id="upload-form">
+        <div class="mb-3">
+            Input folder of pictures from which you will be detected in
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" type="file" name="files[]" accept="image/png, image/jpeg, image/jpg" multiple required>
+        </div>
+        <button class="btn btn-primary" type="button" onclick="uploadWithLoading()">
+            <span id="btn-text">Submit</span>
+            <div class="spinner-border text-light ml-2" role="status" id="loading-spinner" style="display: none;">
+            </div>
+        </button>
+    </form>
+
+    <script>
+        function uploadWithLoading() {
+            // Show loading spinner
+            document.getElementById("btn-text").style.display = "none";
+            document.getElementById("loading-spinner").style.display = "inline-block";
+
+            // Submit the form asynchronously after a short delay (simulate loading)
+            setTimeout(function () {
+                var form = document.getElementById("upload-form");
+                form.submit();
+            }, 1000);  // Adjust the delay time as needed
+        }
+    </script>
+{% endblock %}
