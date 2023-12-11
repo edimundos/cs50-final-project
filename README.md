@@ -1,6 +1,6 @@
 # PIC-FINDER
 #### Video Demo:  <https://youtu.be/IE3KVidzk88>
-#### Description: PIC-FINDER is a web application that helps you locate yourself in a folder of pictures. It is particularly useful for identifying your presence in photos from events, parties, or gatherings.
+#### Description: My PIC-FINDER project is a web application designed to assist users in effortlessly locating themselves within a collection of pictures, especially those captured during events, parties, or social gatherings. Users begin by creating an account, providing a personalized experience for managing their images. Once logged in, they can upload a folder of pictures, and the application utilizes face recognition AI to identify the user's face within the images. After that, the recognized images can be downloaded as a zip folder to the users device. Additionally, the application features a clean and simple user interface, making the process seamless and enjoyable. 
 
 ## Features
 #### **Face Recognition**: The application uses face recognition to identify your face in the uploaded pictures. You can upload a folder of pictures, and the application will determine if you are present in any of them.
@@ -53,7 +53,7 @@ zipp                    3.17.0
 #### To install and run the application, follow these steps:
 1. ```virtualenv name```
 2. ```name\Scripts\activate```
-3. #### copy the code into virtual enviroment (without php code)
+3. #### copy the code into virtual enviroment
 4. #### install all packages
 5. ```flask run```
 
@@ -64,12 +64,9 @@ zipp                    3.17.0
 4. #### go to main page and upload pictures where you want to be found in
 
 
-## Database
-#### For user and picture storage, 000webhost was used
+## Infrastructure
+#### I have a "static" folder for "bootstrap.css" (sketch style) and user-uploaded pics in a sub-folder "uploads". The "templates" folder contains HTML files for how things look. In the main file - "app.py," all the routes and app logic is calculated. The helper file "helpers.py" brings in handy functions to keep the structure of "app.py" clean. Behind the scenes, data is stored in the 000webhost database, which comunicates with the wibsite by a PHP API. For face recognition I used the dlib model - face_recognition library.
 
 ## Disclaimer
 #### The used AI model is not the best and might only recognize people who are directly facing the camera with their whole face fully visible
-
-
-
  
